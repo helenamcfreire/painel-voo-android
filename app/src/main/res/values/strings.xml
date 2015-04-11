@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Painel de Vôos</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="description_search">Buscar</string>
+    <string name="search_hint">Digite o que você procura...</string>
+    <string name="search_label">Search</string>
+    <string name="title_search">Busca</string>
+    <string name="artist">Artista</string>
+    <string name="album">Álbum</string>
+</resources>

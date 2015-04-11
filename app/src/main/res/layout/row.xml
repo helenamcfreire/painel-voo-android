@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <!--  Logo Cia Aerea -->
+    <ImageView
+        android:id="@+id/logoCiaAerea"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/gol"
+        />
+
+    <!-- Horário de embarque -->
+    <TextView
+        android:id="@+id/horarioEmbarque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a3a199"
+        android:textSize="10dp"
+        android:text="10:55"
+        android:layout_toRightOf="@id/logoCiaAerea"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_marginLeft="10dp"
+        />
+
+    <!-- Destino -->
+    <TextView
+        android:id="@+id/destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3b3b3b"
+        android:textSize="13dp"
+        android:text="Rio de Janeiro"
+        android:layout_toRightOf="@id/logoCiaAerea"
+        android:layout_marginLeft="10dp"
+        />
+
+    <!--  Número do Vôo -->
+    <TextView
+        android:id="@+id/numeroVoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:text="0501"
+        android:layout_toRightOf="@id/logoCiaAerea"
+        android:layout_below="@id/destino"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-2dp"
+        />
+
+    <!-- Portão de embarque -->
+    <TextView
+        android:id="@+id/portao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a3a199"
+        android:textSize="10dp"
+        android:text="Portão 2"
+        android:layout_marginRight="21dp"
+        android:layout_below="@+id/status"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a3a199"
+        android:textSize="10dp"
+        android:text="Embarque Imediato"
+        android:layout_below="@+id/destino"
+        android:layout_alignRight="@+id/portao"
+        android:layout_alignEnd="@+id/portao" />
+
+</RelativeLayout>
