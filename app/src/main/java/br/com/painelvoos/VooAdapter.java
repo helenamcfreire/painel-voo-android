@@ -66,8 +66,15 @@ public class VooAdapter<P> extends ArrayAdapter<Voo> {
         destinoTV.setTypeface(mainFont);
 
         TextView portaoTV = (TextView) convertView.findViewById(R.id.portao);
-        portaoTV.setText(" Portão " + voo.getPortao());
         portaoTV.setTypeface(mainFont);
+        if (voo.getPortao().isEmpty()) {
+            portaoTV.setText(" Portão -");
+        } else {
+            portaoTV.setText(" Portão " + voo.getPortao());
+        }
+
+
+
 
         TextView horarioEmbarqueTV = (TextView) convertView.findViewById(R.id.horarioEmbarque);
         horarioEmbarqueTV.setText(voo.getHorario());

@@ -2,8 +2,10 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="50dp"
-    android:orientation="horizontal">
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="@color/background_painel"
+    >
 
     <!--  Logo Cia Aerea -->
     <ImageView
@@ -20,13 +22,14 @@
         android:id="@+id/horarioEmbarque"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#a3a199"
+        android:textColor="#f1c40f"
         android:textSize="10dp"
         android:text="10:55"
         android:layout_toRightOf="@id/logoCiaAerea"
         android:layout_alignParentBottom="true"
         android:gravity="bottom"
         android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
         />
 
     <!-- Destino -->
@@ -34,11 +37,12 @@
         android:id="@+id/destino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#3b3b3b"
+        android:textColor="#f1c40f"
         android:textSize="13dp"
         android:text="Rio de Janeiro"
         android:layout_toRightOf="@id/logoCiaAerea"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <!--  Número do Vôo -->
@@ -46,7 +50,7 @@
         android:id="@+id/numeroVoo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
+        android:textColor="#f1c40f"
         android:textSize="16dp"
         android:text="0501"
         android:layout_toRightOf="@id/logoCiaAerea"
@@ -60,7 +64,7 @@
         android:id="@+id/portao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#a3a199"
+        android:textColor="#f1c40f"
         android:textSize="10dp"
         android:text="Portão 2"
         android:layout_marginRight="21dp"
@@ -74,7 +78,7 @@
         android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#a3a199"
+        android:textColor="#f1c40f"
         android:textSize="10dp"
         android:text="Embarque Imediato"
         android:layout_below="@+id/destino"
